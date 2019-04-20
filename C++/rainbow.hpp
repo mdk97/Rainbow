@@ -1,8 +1,10 @@
 #ifndef RAINBOW_H
 #define RAINBOW_H
 
-#include<stdio.h>
-#include<string.h>
+#include<iostream>
+#include<string>
+
+using std::string;
 
 #define DEFAULT         "\033["
 #define BLACK           "\033[1"
@@ -33,7 +35,7 @@
 #define BG_CYAN         ";46m"
 #define BG_WHITE        ";47m"
 
-void print_colored(char *string, char *color_fg, char *color_bg);
-void set_color(char *color_fg, char *color_bg);
+void print_colored(const string &str, const char *color_fg, const char *color_bg);
+void set_color(const char *color_fg, const char *color_bg);
 
 #endif
