@@ -9,7 +9,6 @@ To set a color (all the subsequent strings will be colored), just call `set_colo
 #### Foreground
 - DEFAULT
 - BLACK
-- DARK_GREY
 - GREY
 - DARK_RED
 - RED
