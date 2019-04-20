@@ -4,8 +4,7 @@
 #include<stdio.h>
 
 #define DEFAULT         "\033["
-#define BLACK           "\033[1"
-#define DARK_GREY       "\033[30"
+#define BLACK           "\033[30"
 #define GREY            "\033[1;30"
 #define DARK_RED        "\033[31"
 #define RED             "\033[1;31"
