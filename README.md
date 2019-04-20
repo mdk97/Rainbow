@@ -1,6 +1,8 @@
 # Rainbow
 Rainbow is a simple C/C++ library for printing colored text in terminal-based applications using the ANSI color escape codes
 
+<br><br>
+![](img/rainbow.png)
 ## Usage
 To print a colored string, just call the `print_colored` function. <br>
 To set a color (all the subsequent strings will be colored), just call `set_color`<br>
