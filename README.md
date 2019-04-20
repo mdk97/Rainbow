@@ -39,12 +39,12 @@ To set a color (all the subsequent strings will be colored), just call `set_colo
 
 ## Examples
 ```c
-    // To print the string "Hello, World!" in yellow on blue background, you would use the following code:
+    /* To print the string "Hello, World!" in yellow on blue background, you would use the following code: */
     print_colored("Hello, World!\n", YELLOW, BG_BLUE);
     
-    // To set the color magenta on cyan background for all the subsequent strings:
+    /* To set the color magenta on cyan background for all the subsequent strings: */
     set_color(MAGENTA, BG_CYAN);
     
-    // To go back to default colors on your terminal:
+    /* To go back to default colors on your terminal: */
     set_color(DEFAULT, BG_DEFAULT);
 ``` 
