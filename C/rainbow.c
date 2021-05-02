@@ -3,7 +3,7 @@
 
 void print_colored(const char *string, const char *color_fg, const char *color_bg)
 {
-    if (getenv("NO_COLOR") != NULL)
+    if (getenv("NO_COLOR") == NULL)
     {
         printf("%s%s", color_fg, color_bg);
     }
@@ -13,6 +13,6 @@ void print_colored(const char *string, const char *color_fg, const char *color_b
 
 void set_color(const char *color_fg, const char *color_bg)
 {
-    if (getenv("NO_COLOR") != NULL)
+    if (getenv("NO_COLOR") == NULL)
         printf("%s%s", color_fg, color_bg);
 }

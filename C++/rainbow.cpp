@@ -5,7 +5,7 @@ using std::cout;
 
 void print_colored(const string &str, const char *color_fg, const char *color_bg)
 {
-    if (std::getenv("NO_COLOR") != nullptr)
+    if (std::getenv("NO_COLOR") == nullptr)
     {
         cout << color_fg << color_bg;
     }
@@ -15,6 +15,6 @@ void print_colored(const string &str, const char *color_fg, const char *color_bg
 
 void set_color(const char *color_fg, const char *color_bg)
 {
-    if (std::getenv("NO_COLOR") != nullptr)
+    if (std::getenv("NO_COLOR") == nullptr)
         cout << color_fg << color_bg;
 }
