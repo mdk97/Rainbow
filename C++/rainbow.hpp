@@ -3,6 +3,7 @@
 
 #include<iostream>
 #include<string>
+#include <cstdlib>
 
 using std::string;
 
@@ -34,7 +35,20 @@ using std::string;
 #define BG_CYAN         ";46m"
 #define BG_WHITE        ";47m"
 
-void print_colored(const string &str, const char *color_fg, const char *color_bg);
-void set_color(const char *color_fg, const char *color_bg);
+inline void print_colored(const string &str, const char *color_fg, const char *color_bg)
+{
+    if (std::getenv("NO_COLOR") == nullptr)
+    {
+        std::cout << color_fg << color_bg;
+    }
+
+    std::cout << str << DEFAULT << BG_DEFAULT;
+}
+
+inline void set_color(const char *color_fg, const char *color_bg)
+{
+    if (std::getenv("NO_COLOR") == nullptr)
+        std::cout << color_fg << color_bg;
+}
 
 #endif
